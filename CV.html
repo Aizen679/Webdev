@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+      <!--
+      CSS
+      is
+      included
+      within
+      the
+      HTML
+      file
+      itself.
+      --
+    />
+    />
+    <style>
+      body {
+        font-family: poppins;
+        font-weight: 500;
+        background: linear-gradient(rgb(156, 2, 183), rgb(84, 1, 185));
+        min-height: 100vh;
+        margin: 0;
+        color: #333;
+      }
+
+      nav {
+        background: rgba(26, 17, 53, 0.8);
+        padding: 18px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav a {
+        position: relative;
+        color: #ffffff;
+        margin: 0 15px;
+        font-weight: 500;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      nav a::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: -5px;
+        height: 2px;
+        background-color: #ff9800;
+        transition: all 0.7s ease;
+      }
+
+      nav a:hover::after {
+        left: 0;
+        right: 0;
+      }
+      nav a.contact-btn::after {
+        content: none;
+      }
+      .contact-btn {
+        background: #ff9800;
+        padding: 8px 20px;
+        border-radius: 25px;
+        transition: 0.3s ease;
+      }
+
+      .contact-btn:hover {
+        color: #ffffff;
+        background: #7e4c01;
+      }
+
+      .container {
+        max-width: 80%;
+        margin: 40px auto;
+        background: white;
+        padding: 40px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+      }
+
+      .profile-header {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 30px;
+        line-height: 22px;
+      }
+
+      .profile-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 4px solid #9d00ff;
+        object-fit: cover;
+      }
+
+      h1 {
+        font-size: 50px;
+        color: #2d2d2d;
+        margin: 0;
+        font-family: poppins;
+      }
+
+      h2 {
+        color: #444;
+        border-bottom: 3px solid #ff9800;
+        padding-bottom: 8px;
+        margin-top: 25px;
+        font-size: 1.8rem;
+      }
+
+      .section {
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+
+      .section p {
+        font-size: 1.1rem;
+      }
+
+      .section ul {
+        padding-left: 25px;
+      }
+
+      .section li {
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        font-size: 14px;
+        margin-top: 50px;
+      }
+
+      .highlight {
+        color: #ff9800;
+        font-weight: 600;
+      }
+
+      .badge {
+        display: inline-block;
+        background: #f0f0f0;
+        padding: 5px 15px;
+        border-radius: 20px;
+        margin: 5px;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">Discord</a>
+      <a href="#" class="contact-btn">Contact Me</a>
+    </nav>
+
+    <div class="container">
+      <section class="section">
+        <div class="profile-header">
+          <img src="Img/Aarav.jpg" alt="Aarav Thakur" class="profile-image" />
+          <div>
+            <h1>Aarav Thakur</h1>
+            <p class="highlight">Student</p>
+            <p>St. Xavier's College, Maitighar</p>
+          </div>
+        </div>
+        <p>
+          Hi, Konnichiwa, Privet, Namaste and Namaskar, I am Aarav Thakur. I am
+          a student currently pursuing my studies in grade 11 at St. Xavier's
+          College, Maitighar. I am really fascinated by the mysteries of this
+          world and fiction. I have also been learning web development since I
+          was young and I have a good grasp over the basics HTML and CSS.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Education</h2>
+        <div class="badge">Current Student</div>
+        <p><strong>Education Level:</strong> 11th Grade (+2)</p>
+        <p><strong>Schooling:</strong> Mithila Institute of Technology (MIT)</p>
+        <p><strong>College:</strong> St. Xavier's College, Maitighar</p>
+      </section>
+
+      <section class="section">
+        <h2>Languages</h2>
+        <span class="badge">English</span>
+        <span class="badge">Japanese(Basic)</span>
+        <span class="badge">Nepali</span>
+        <span class="badge">Maithili</span>
+        <span class="badge">Hindi</span>
+      </section>
+
+      <section class="section">
+        <h2>Skills</h2>
+        <span class="badge">HTML</span>
+        <span class="badge">CSS</span>
+        <span class="badge">Basic JavaScript</span>
+        <span class="badge">Sketching</span>
+        <span class="badge">Anime Binging</span>
+      </section>
+
+      <section class="section">
+        <h2>Major Accomplishments</h2>
+        <ul>
+          <li>Developed a personal portfolio website.</li>
+          <li>Won in many art competitions.</li>
+          <li>
+            Curated personal anime database with 300+ titles and 10+ manga.
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Career Objectives</h2>
+        <p>
+          To leverage my knowledge in different fields and pursue a strong
+          career in computer enginnering and AI.
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      <p>
+        <strong>Phone:</strong> 9844241244 |
+        <strong>Email:</strong> aarav4270@gmail.com
+      </p>
+      <p>
+        <strong>Address{</strong>Temp: Anamnagar, Kathmandu | Perm: Janakpur,
+        Nepal}
+      </p>
+      <p>Copyright © 2025| Aarav Thakur | All rights reserved</p>
+    </footer>
+  </body>
+</html>
